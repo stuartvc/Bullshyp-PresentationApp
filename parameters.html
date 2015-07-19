@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no
+		initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>No Bullshyp</title>
+
+	<style>
+		@import 'ui/css/evothings-app.css';
+		@import 'ui/css/bullshyp.css';
+	</style>
+
+	<script>
+	// Redirect console.log to Evothings Workbench.
+	if (window.hyper && window.hyper.log) { console.log = hyper.log }
+	</script>
+
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/js/bullshyp.js"></script>
+
+</head>
+
+<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
+	<div class='wrapper'>
+		<h1 class='nobs'>No BullShyp</h1>
+
+		<form class='details-form' action='score.html'>
+			<input type='radio' id='fragile'> Is your shipment fragile?</input>
+			<br>
+			<input class='submit_button' type='submit' onClick='submitParameters();'></input>
+		</form>
+	</div>
+
+</body>
+
+</html>

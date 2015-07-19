@@ -1,0 +1,43 @@
+#scorenum {
+	font-size: 150%;
+	text-align:center;
+}
+
+.nobs {
+	font-size:125% !important; 
+	text-align:center !important;
+	font-color:white !important;
+}
+
+.wrapper {
+	color:white !important;
+}
+
+.submit_button {
+	/*background-color: #0D47A1 !important;*/
+	background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+	color:white;
+	padding:5px;
+	border-radius:3px;
+	border-color:white !important;
+	margin:auto;
+}
+.shiphand{
+	text-align:center;
+	font-size:110%;
+}
+html {
+	background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/BullShyp_Background.jpg') no-repeat center center fixed !important;
+
+	background-size:cover;
+}
+
+#fragile{
+	width:24px;
+	height:24px;
+	
+}
+
+.details-form{
+	font-size:24px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no
+		initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>No Bullshyp</title>
+
+	<style>
+		@import 'ui/css/evothings-app.css';
+		@import 'ui/css/bullshyp.css';
+	</style>
+
+	<script>
+	// Redirect console.log to Evothings Workbench.
+	if (window.hyper && window.hyper.log) { console.log = hyper.log }
+	</script>
+
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/js/bullshyp.js"></script>
+
+</head>
+
+<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
+	<div class='wrapper'>
+		<h1 class='nobs'>No BullShyp</h1>
+
+		<p style="font-size:1100%px">Your shipment is currently being tracked. Press the button below once you have received your shipment.</p>
+
+		<form action = 'parameters.html'>
+			<input class='submit_button' type='submit' value='Receive Shipment' onClick='receiveShipment();'></input>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no
+		initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>No Bullshyp</title>
+
+	<style>
+		@import 'ui/css/evothings-app.css';
+		@import 'ui/css/bullshyp.css';
+	</style>
+
+	<script>
+	// Redirect console.log to Evothings Workbench.
+	if (window.hyper && window.hyper.log) { console.log = hyper.log }
+	window.onload = function(){
+		var scorenumber = 87;
+		var score = document.getElementById('scorenum');
+		if (scorenumber >= 75){
+			score.innerHTML = "Very Well";
+			score.style.color = "#4caf50";
+		} else if (scorenumber < 75 && score >= 50){
+			score.innerHTML = "Satisfactory";
+			score.style.color = "#ffc107";
+		} else {
+			score.innerHTML = "Poorly";
+			score.style.color = "#f44336";
+		}
+	}
+	</script>
+
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/js/bullshyp.js"></script>
+
+</head>
+
+<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
+	<div class='wrapper'>
+		<h1 class='nobs'>No BullShyp</h1>
+		<h2 class='shiphand'>Your shipment was handled:</h2>
+
+		<div>
+			<p id='scorenum'>
+				
+			</p>
+		</div>
+	</div>
+
+</body>
+
+</html>
