@@ -1,4 +1,5 @@
 function receiveShipment() {
+	window.featureVector = app.getFeatureVector();
 }
 
 function submitParameters() {

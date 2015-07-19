@@ -49,14 +49,16 @@ app.initialize = function()
 
 app.onDeviceReady = function()
 {
+	console.log("stuart is the best");
+	app.startSensorTag();
 	app.showInfo('Activate the SensorTag and tap Start.');
 };
 
 app.showInfo = function(info)
 {
 	//change this TODO
-	document.getElementById('info').innerHTML = info;
-	//console.log(info);
+	//document.getElementById('info').innerHTML = info;
+	console.log(info);
 };
 
 app.startSensorTag = function()
@@ -208,7 +210,7 @@ app.startAccelerometerNotification = function(device)
 		app.sensortag.MOVEMENT_DATA,
 		function(data)
 		{
-			app.showInfo('Status: Data stream active - accelerometer');
+			//app.showInfo('Status: Data stream active - accelerometer');
 			var dataArray = new Uint8Array(data);
 			var values = app.getAccelerometerValues(dataArray);
 			app.updateMapAccel(values);
@@ -345,4 +347,4 @@ app.onLogButton = function()
 };
 
 // Initialize the app.
-app.initialize();
+//app.initialize();
