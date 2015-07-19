@@ -28,7 +28,9 @@
 	<script src="libs/evothings/easyble/easyble.js"></script>
 	<script src="libs/js/app.js"></script>
 	<script>
-	app.initialize();
+	$(document).ready(function(){
+		app.initialize();
+	});
 	</script>
 
 </head>
@@ -36,12 +38,27 @@
 <body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
 	<div class='wrapper'>
 		<h1 class='nobs'>No BullShyp</h1>
+		<div class="page1">
+			<p style="font-size:1100%px">Your shipment is currently being tracked. Press the button below once you have received your shipment.</p>
 
-		<p style="font-size:1100%px">Your shipment is currently being tracked. Press the button below once you have received your shipment.</p>
+				<button class='submit_button' onClick='receiveShipment();'>Receive Shipment</button>
 
-		<form action = 'parameters.html'>
-			<input class='submit_button' type='submit' value='Receive Shipment' onClick='receiveShipment();'></input>
-		</form>
+		</div>
+		<div class="page2" style="display:none;">
+				<input type='radio' id='fragile'> Is your shipment fragile?</input>
+				<br>
+				<button class='submit_button' onClick='submitParameters();'>Submit</input>
+		
+		</div>
+		<div class="page3" style="display:none;">
+			<h2 class='shiphand'>Your shipment was handled:</h2>
+
+			<div>
+				<p id='scorenum'>
+					
+				</p>
+			</div>
+		</div>
 	</div>
 </body>
 

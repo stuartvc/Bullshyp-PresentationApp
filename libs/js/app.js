@@ -49,7 +49,6 @@ app.initialize = function()
 
 app.onDeviceReady = function()
 {
-	console.log("stuart is the best");
 	app.startSensorTag();
 	app.showInfo('Activate the SensorTag and tap Start.');
 };
@@ -118,7 +117,7 @@ app.startScan = function()
 
 app.deviceIsSensorTag = function(device)
 {
-	console.log('device name: ' + device.name);
+	// console.log('device name: ' + device.name);
 	return (device != null) &&
 		(device.name != null) &&
 		(device.name.indexOf('Sensor Tag') > -1 ||
@@ -317,7 +316,6 @@ app.getFeatureVector = function()
 	featureVector.push(app.tableData[1]['maxValue']);
 	featureVector.push(app.tableData[2]['maxValue']);
 	featureVector.push(app.tableData[3]['maxValue']);
-
 	return featureVector;
 }
 

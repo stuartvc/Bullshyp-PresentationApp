@@ -17,20 +17,7 @@
 	<script>
 	// Redirect console.log to Evothings Workbench.
 	if (window.hyper && window.hyper.log) { console.log = hyper.log }
-	window.onload = function(){
-		var scorenumber = 87;
-		var score = document.getElementById('scorenum');
-		if (scorenumber >= 75){
-			score.innerHTML = "Very Well";
-			score.style.color = "#4caf50";
-		} else if (scorenumber < 75 && score >= 50){
-			score.innerHTML = "Satisfactory";
-			score.style.color = "#ffc107";
-		} else {
-			score.innerHTML = "Poorly";
-			score.style.color = "#f44336";
-		}
-	}
+
 	</script>
 
 	<script src="libs/evothings/evothings.js"></script>
