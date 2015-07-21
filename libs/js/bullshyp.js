@@ -39,6 +39,7 @@ function receiveScore()
 {
 }
 
+
 function resetApp()
 {
 	$(".page1").show();

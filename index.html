@@ -9,8 +9,10 @@
 
 	<title>No Bullshyp</title>
 
-	<link rel='stylesheet' type='text/css' href='ui/css/evothings-app.css'>
-	<link rel='stylesheet' type='text/css' href='ui/css/Bullshyp.css'>
+	<style>
+		@import 'ui/css/evothings-app.css';
+		@import 'ui/css/bullshyp.css';
+	</style>
 
 	<script>
 	// Redirect console.log to Evothings Workbench.
@@ -35,9 +37,10 @@
 
 <body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
 	<div class='wrapper'>
+		<img class='logo' src='ui/images/logo.jpg'>
 		<h1 class='nobs' onClick='resetApp();'>No BullShyp</h1>
 		<div class="page1">
-			<p style="font-size:85%;text-align:center;">Your shipment is currently being tracked. Press the button below once you have received your shipment.</p>
+			<p style="font-size:90%; text-align:center">Your shipment is currently being tracked. Press the button below once you have received your shipment.</p>
 
 				<button class='submit_button' onClick='receiveShipment();'>Receive Shipment</button>
 
@@ -45,9 +48,10 @@
 		<div class="page2" style="display:none;">
 			<div class='details-form'>
 				<input type='checkbox' id='fragile'> Fragile Shipment</input>
-
+				<br>
 				<button class='submit_button2' onClick='submitParameters();'>Submit</input>
 			</div>
+		
 		</div>
 		<div class="page3" style="display:none;">
 			<h2 class='shiphand'>Your shipment was handled:</h2>
