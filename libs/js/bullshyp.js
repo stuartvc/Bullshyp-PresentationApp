@@ -38,3 +38,14 @@ function getScoreNumber(array){
 function receiveScore()
 {
 }
+
+function resetApp()
+{
+	$(".page1").show();
+	$(".page2").hide();
+	$(".page3").hide();
+	document.getElementById("fragile").checked = false;
+	document.getElementById("scorenum").innerHTML = "";
+	app.resetData();
+	app.startSensorTag();
+}
