@@ -11,7 +11,7 @@ function receiveShipment() {
 	if (scorenumber >= 0.75){
 		score.innerHTML = "Very Well";
 		score.style.color = "#4caf50";
-	} else if (scorenumber < 0.75 && score >= 0.50){
+	} else if (scorenumber < 0.75 && scorenumber >= 0.50){
 		score.innerHTML = "Satisfactory";
 		score.style.color = "#ffc107";
 	} else {
